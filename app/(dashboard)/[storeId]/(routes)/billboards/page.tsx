@@ -7,7 +7,7 @@ const BillboardPage = async (
     {params}: {params: {storeId: string}}
 ) => {
 
-    const billboards : BillboardColumn[] = await prismadb.billboard.findMany({
+    const billboards = await prismadb.billboard.findMany({
         where: {
             storeId: params.storeId
         }, 

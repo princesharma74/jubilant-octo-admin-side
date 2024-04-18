@@ -7,7 +7,7 @@ const SizePage = async (
     {params}: {params: {storeId: string}}
 ) => {
 
-    const sizes : SizeColumn[] = await prismadb.size.findMany({
+    const sizes = await prismadb.size.findMany({
         where: {
             storeId: params.storeId
         }, 
