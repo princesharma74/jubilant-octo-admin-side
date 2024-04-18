@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import prismadb from "@/lib/prismadb";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
+// --
 const Navbar = async () => {
     const {userId} = auth()
     if(!userId){
