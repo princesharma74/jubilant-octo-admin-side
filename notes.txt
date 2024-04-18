@@ -1,0 +1,10 @@
+Difference between npm and npx?
+Use npm when you need to install packages, manage dependencies, run scripts defined in your package.json, or manage versions of packages.
+Use npx when you want to run a package without installing it, execute local binaries, or run multiple versions of a package.
+
+To generate prisma
+CMD: sudo npx prisma generate
+
+To install @prisma/client
+CMD: npm install @prisma/client
+
